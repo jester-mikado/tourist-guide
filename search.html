@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rover</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <section class="parent">
+        <div class="child">
+            <div class="search">
+                <h1>Explore the place you want in Tamil Nadu</h1>
+                <input type="text" id="find" placeholder="Search here..." onkeyup="search()">
+                <div class="button"><a href="index.html">
+                        <h5>Home</h5>
+                    </a></div>
+            </div>
+            <div class="product-list">
+                <div class="product">
+                    <a href="ariyalur.html">
+                        <img src="/places/ariyalur.jpg">
+                        <h3>Ariyalur</h3>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="chengalpattu.html"><img src="/places/chengalpattu.jpg">
+                    <h3>Chengalpattu</h3></a>
+                </div>
+                <div class="product">
+                    <a href="chennai.html"><img src="/places/chennai.png">
+                    <h3>Chennai</h3></a>
+                </div>
+                <div class="product">
+                    <a href="cuddalore.html"><img src="/places/cuddalore2.jpg">
+                    <h3>Cuddalore</h3></a>
+                </div>
+                <div class="product">
+                    <a href="coimbatore.html"><img src="/places/coimbatore.jpg">
+                    <h3>Coimbatore</h3></a>
+                </div>
+                <div class="product">
+                    <a href="darmapuri.html"><img src="/places/dharmapuri.jpg">
+                    <h3>Dharmapuri</h3></a>
+                </div>
+                <div class="product">
+                    <a href="dindugul.html"><img src="/places/dindigul.jpg">
+                    <h3>Dindigul</h3></a>
+                </div>
+                <div class="product">
+                    <a href="erode.html"><img src="/places/erode.jpg">
+                    <h3>Erode</h3></a>
+                </div>
+                <div class="product">
+                    <a href="madurai.html"><img src="/places/madurai.jpg">
+                    <h3>Madurai</h3></a>
+                </div>
+                <div class="product">
+                    <a href="mayiladudurai.html"><img src="/places/mayiladuthurai.jpg">
+                    <h3>Mayiladuthurai</h3></a>
+                </div>
+                <div class="product">
+                    <a href="nagapattinam.html"><img src="/places/nagapattinam.jpg">
+                    <h3>Nagapattinam</h3></a>
+                </div>
+                <div class="product">
+                    <a href="namakkal.html"><img src="/places/namakkal.jpg">
+                    <h3>Namakkal</h3></a>
+                </div>
+                <div class="product">
+                    <a href="kanyakumari.html"><img src="/places/kanyakumari.jpg">
+                    <h3>Kanyakumari</h3></a>
+                </div>
+                <div class="product">
+                    <a href="ramanathapuram.html"><img src="/places/ramanathapuram.jpg">
+                    <h3>Ramanathapuram</h3></a>
+                </div>
+                <div class="product">
+                    <a href="salem.html"><img src="/places/salem.jpg">
+                    <h3>Salem</h3></a>
+                </div>
+                <div class="product">
+                    <a href="sivaganga.html"><img src="/places/sivaganga.jpg">
+                    <h3>Sivaganga</h3></a>
+                </div>
+                <div class="product">
+                    <a href="tenkasi.html"><img src="/places/tenkasi.jpg">
+                    <h3>Tenkasi</h3></a>
+                </div>
+                <div class="product">
+                    <a href="thanjavur.html"><img src="/places/thanjavur cart.jpg">
+                    <h3>Thanjavur</h3></a>
+                </div>
+                <div class="product">
+                    <a href="theni.html"><img src="/places/theni.jpg">
+                    <h3>Theni</h3></a>
+                </div>
+                <div class="product">
+                    <a href="Tiruchirapalli.html"><img src="/places/thiruchi.jpg">
+                    <h3>Tiruchirapalli</h3></a>
+                </div>
+                <div class="product">
+                    <a href="thiruvarur.html"><img src="/places/thiruvarur.jpg">
+                    <h3>Thiruvarur</h3></a>
+                </div>
+                <div class="product">
+                    <a href="thoothukudi.html"><img src="/places/thoothukudi.jpg">
+                    <h3>Thoothukudi</h3></a>
+                </div>
+                <div class="product">
+                    <a href="tirunelveli.html"><img src="/places/tirunelveli.jpg">
+                    <h3>Tirunelveli</h3></a>
+                </div>
+                <div class="product">
+                    <a href="tirupur.html"><img src="/places/tiruppur.jpg">
+                    <h3>Tirupur</h3></a>
+                </div>
+                <div class="product">
+                    <a href="tiruvannamalai.html"><img src="/places/tiruvannamalai.jpg">
+                    <h3>Tiruvannamalai</h3></a>
+                </div>
+                <div class="product">
+                    <a href="villupuram.html"><img src="/places/villupuram.jpg">
+                    <h3>Villupuram</h3></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function search() {
+            let filter = document.getElementById('find').value.toLowerCase();
+            let item = document.querySelectorAll(".product");
+            let l = document.getElementsByTagName("h3");
+            for (var i = 0; i <= l.length; i++) {
+                let a = item[i].getElementsByTagName('h3')[0];
+                let value = a.innerHTML || a.innerText || a.textContent;
+
+                if (value.toLowerCase().indexOf(filter) > -1) {
+                    item[i].style.display = "";
+                }
+                else {
+                    item[i].style.display = "none";
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

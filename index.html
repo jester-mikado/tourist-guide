@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rover</title>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <ul class="nav">
+            <a class="search-a" href="search.html"><div class="input"><i class="fa-solid fa-magnifying-glass"></i></div></a>
+        </ul>
+        <h2><i class="fa-solid fa-plane-departure"></i></h2>
+    </head>
+
+<body>
+    <!-- for parallax effect -->
+    <section class="image" id="home">
+        <h1 class="head">R O V E R</h1>
+        <img src="land2.png" class="moon">
+        <img src="cloud.png" class="cloud">
+        <img src="clouds2.png" class="cloud2">
+        <img src="land.png" class="cloud3">
+        <img src="lan.png" class="land">
+    </section>
+    <!-- second page -->
+    <section id="page2" class="p2">
+        <h2>HEY THERE ...</h2>
+        <!-- <div class="border"> -->
+        <p>Discover the world with ease using our free tourist guide website! Whether you're exploring a bustling city
+            or a tranquil village, our platform offers detailed itineraries, local insights, and must-see attractions to
+            help you make the most of your travels. With user-friendly navigation and up-to-date information, planning
+            your next adventure has never been simpler. Start exploring today and turn your travel dreams into reality!
+            <br> <br>Get insider tips and personalized recommendations tailored to your interests on our free tourist
+            guide
+            website! From hidden gems and local eateries to cultural experiences and essential travel advice, we provide
+            everything you need to enrich your journey and create unforgettable memories. Let us be your companion in
+            discovering new destinations with confidence and ease.
+        </p>
+        </div>
+        <h1 class="end-head">CATCH US ON</h1>
+        <div class="logo-parent">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+        </div>
+    </section>
+
+
+    <script>
+        let text = document.querySelector(".head")
+        let cloud = document.querySelector(".cloud")
+        let moon = document.querySelector(".moon")
+        let land = document.querySelector(".land")
+        let cloud2 = document.querySelector(".cloud2")
+        let cloud3 = document.querySelector(".cloud3")
+
+
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+
+            text.style.marginTop = value * 0.5 + 'px';
+            cloud.style.left = value * -1.5 + 'px';
+            moon.style.marginTop = value * 2.5 + 'px';
+            moon.style.left = value * -0.5 + 'px';
+            cloud2.style.left = value * -0.2 + 'px';
+            cloud3.style.left = value * -0.5 + 'px';
+        });
+    </script>
+
+</body>

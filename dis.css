@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins", sans-serif;
+
+}
+.fa-plane-departure{
+    font-size: 40px;
+    margin-top: 3%;
+    color: white;
+    -webkit-text-stroke: 2px red;
+}
+.heading{
+    position: absolute;
+    font-size: 40px;
+    top: 4%;
+    left: 14%;
+
+}
+.button1{
+    right: 35%;
+    top: 7%;
+    height: 40px;
+    width: 80px;
+    background-color:rgb(12, 109, 147);
+    position: absolute;
+    border-radius: 30px;
+}
+.button1 h5, .button2 h5, .button3 h5, .button4 h5{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    
+}
+.button1 a , .button2 a, .button3 a , .button4 a{
+    text-decoration: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.button1 :hover, .button2 :hover, .button3 :hover{
+    background-color: rgb(31, 149, 195);
+    border-radius: 30px;
+}
+.button4 :hover{
+    background-color: rgb(168, 7, 168);
+    border-radius: 30px;
+}
+.button1 :active, .button2 :active, .button3 :active {
+    background-color: rgb(52, 184, 236);
+    border-radius: 30px;
+}
+.button4 :active{
+    background-color: rgb(199, 58, 199);
+    border-radius: 30px;
+}
+.button2{
+    right: 26%;
+    top: 7%;
+    height: 40px;
+    width: 80px;
+    background-color:rgb(12, 109, 147);
+    position: absolute;
+    border-radius: 30px;
+}
+.button3{
+    right: 17%;
+    top: 7%;
+    height: 40px;
+    width: 80px;
+    background-color:rgb(12, 109, 147);
+    position: absolute;
+    border-radius: 30px;
+}
+.button4{
+    right:10%;
+    top: 7%;
+    height: 40px;
+    width: 80px;
+    background-color:purple;
+    position: absolute;
+    border-radius: 30px;
+}
+.picture{
+    height: 500px;
+    object-fit: cover;
+    width: 90%;
+    position: absolute;
+    border-radius: 20px;
+}
+.picture-shadow{
+    position: relative;
+    height: 500px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.556);
+    border-radius: 20px;
+
+}
+.place-name h2{
+    font-size: 60px;
+    color: white;
+    left: 2%;
+    bottom: 30%;
+    position: absolute;
+}
+
+.place-name p{
+    left: 2%;
+    top:  70%;
+    position: absolute;
+    right: 3%;
+    color: white;
+}
+.topics{
+    font-size: 60px;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+}
+section{
+    min-height: 100vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.place-button{
+    height: 50px;
+    width: 200px;
+    background-color: transparent;
+    position: relative;
+    border-radius: 20px;
+    border: 1px black solid;
+}
+.place-button :hover{
+    background-color: rgb(150, 144, 144);
+    border-radius: 20px;
+}
+.place-button :active{
+    background-color: rgb(208, 200, 200);
+    border-radius: 20px;}
+.place-button-parent{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.place-button a{
+    text-decoration: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.place-button h5{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color:black;
+}
+.visit-picture{
+    position: relative;
+    height: 400px;
+    width: 570px;
+    
+}
+.visit-picture-image{
+    position: absolute;
+}
+.visit-picture-image img{
+    height: 400px;
+    width: 570px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 30px;
+
+}
+.picture-text{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.556) ;
+    opacity: 0;
+    border-radius: 20px;
+    transition: opacity 0.45s;
+    margin-top: 30px;
+}
+.picture-text:hover{
+    opacity: 1;
+}
+.picture-text-h1{
+    position: absolute;
+    top: 20%;
+    color:goldenrod;
+    left: 3%;
+}
+.picture-text-para{
+    position: absolute;
+    top: 30%;
+    color:white;
+    left: 3%;
+    right: 3%;
+}
+.visit-picture-parent{
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.timing{
+    left: 3%;
+    right: 3%;
+    position: absolute;
+    bottom: 4%;
+    color: white;
+}
+.food-items{
+    position: relative;
+    height: 400px;
+    width: 570px;
+}
+.food-items img{
+    position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.food-name{
+    font-size: 30px;
+    top: 20%;
+    position: absolute;
+    left: 3%;
+}
+.food-item-parent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+.food-para{
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    right: 3%;
+    font-size: 20px;
+}
+.hotel-slogan{
+    color: red;
+}
+.hotel-card{
+    height: 400px;
+    width: 300px;
+    position: relative;
+}
+.hotel-inner img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0 ;
+}
+.overlay{
+    width: 100%;
+    height: 0;
+    background-color: black;
+    position: absolute;
+    overflow: hidden;
+    transition: 0.5s ease;
+    bottom: 0;
+    border-radius: 30px 30px 0 0 ;
+}
+.hotel-card:hover .overlay{
+    height: 70%;
+}
+.overlay-name{
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    color: goldenrod;
+}
+.overlay-para{
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    color: white;
+    gap: 5px;
+}
+.hotel-button{
+    bottom: 3%;
+    left: 15%;
+    height: 40px;
+    width: 200px;
+    background-color:red;
+    position: absolute;
+    border-radius: 20px;
+}
+.hotel-button h5{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    
+}
+.hotel-button a{
+    text-decoration: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.hotel-parent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-top: 20px;
+}
+.footer-parent{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-color: rgb(57, 5, 80);
+}
+.fa-logo{
+  position: absolute;
+  left: 20%;
+  font-size: 30px;
+  -webkit-text-stroke:2px rgb(150, 11, 11) ;
+  color: transparent;
+}
+.footer-name{
+    position: absolute;
+    left: 24%;
+    top: 16%;
+    font-size: 40px;
+    color: white;
+}
+.footer-slogan{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    color: rgb(145, 141, 141);
+}
+.footer-para{
+    position: absolute;
+    top: 60%;
+    left: 17%;
+    color: white;
+}
+.fa-whatsapp{
+    position: absolute;
+    top: 75%;
+    right: 30%;
+    font-size: 30px;
+    color: white;
+}
+.fa-instagram{
+    position: absolute;
+    top: 75%;
+    right: 25%;
+    font-size: 30px;
+    color: white;
+}
+.fa-facebook{
+    position: absolute;
+    top: 75%;
+    right: 20%;
+    font-size: 30px;
+    color: white;
+}
+.fa-square-twitter{
+    position: absolute;
+    top: 75%;
+    right: 15%;
+    font-size: 30px;
+    color: white;
+}
+.footer-topic{
+    position: absolute;
+    top: 16%;
+    right: 20%;
+    font-size: 40px;
+    color: white;
+}
+.footer-topic2{
+    position: absolute;
+    top: 35%;
+    right: 20%;
+    font-size: 35px;
+    color: orange;
+}
+.line{
+    position: absolute;
+    left: 50%;
+    height: 70%;
+    font-size: 3px;
+    background-color: white;
+    top: 15%;
+    bottom: 5%;
+}
